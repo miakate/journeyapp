@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:journeyapp/Screens/Login/components/background.dart';
-import 'package:journeyapp/Screens/Signup/signup_screen.dart';
+import 'package:journeyapp/screens/Login/components/background.dart';
+import 'package:journeyapp/screens/Signup/signup_screen.dart';
 import 'package:journeyapp/components/already_have_an_account_acheck.dart';
 import 'package:journeyapp/components/rounded_button.dart';
 import 'package:journeyapp/components/rounded_input_field.dart';

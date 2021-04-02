@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:journeyapp/Screens/Welcome/components/body.dart';
+import 'package:journeyapp/screens/Login/components/body.dart';
 
-class WelcomeScreen extends StatelessWidget {
+class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
