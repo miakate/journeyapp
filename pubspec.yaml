@@ -31,6 +31,7 @@ dependencies:
   animated_splash: ^1.0.0
   video_player: ^2.1.0
   flare_splash_screen: ^3.0.1
+  intl: ^0.16.1
 
 
 

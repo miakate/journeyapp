@@ -25,12 +25,7 @@ class _OffersScreenState extends State<OffersScreen> {
     return Scaffold(
       appBar: styledAppbar(context, title: this.title),
       body: StreamBuilder<QuerySnapshot>(
-        stream: (name != "" && name != null)
-            ? Firestore.instance
-                .collection('offers')
-                .where("searchKeywords", arrayContains: name)
-                .snapshots()
-            : Firestore.instance.collection("offers").snapshots(),
+        stream: Firestore.instance.collection("offers").snapshots(),
         builder: (context, snapshot) {
           return (snapshot.connectionState == ConnectionState.waiting)
               ? Center(child: CircularProgressIndicator())
