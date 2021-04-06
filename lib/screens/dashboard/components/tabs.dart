@@ -38,14 +38,14 @@ class _TabsPageState extends State<TabsPage> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.directions_transit,
+              Icons.place_sharp,
               // size: 70,
             ),
             title: SizedBox.shrink(),
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.directions_transit,
+              Icons.event,
               // color: _currentIndex == 1
               //     ? Styles.primaryPink
               //     : Styles.primaryDarkPurple,
@@ -54,7 +54,7 @@ class _TabsPageState extends State<TabsPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.directions_transit,
+              Icons.family_restroom_outlined,
               // color: _currentIndex == 2
               // ? Styles.primaryPink
               // : Styles.primaryDarkPurple,
@@ -63,7 +63,7 @@ class _TabsPageState extends State<TabsPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.directions_transit,
+              Icons.person,
               // color: _currentIndex == 3
               // ? Styles.primaryPink
               // : Styles.primaryDarkPurple,

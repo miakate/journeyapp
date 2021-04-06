@@ -2,6 +2,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:journeyapp/screens/dashboard/components/appbar.dart';
 
+import 'offer_details.dart';
+
 class OffersScreenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -19,9 +21,13 @@ class OffersScreen extends StatefulWidget {
 class _OffersScreenState extends State<OffersScreen> {
   final title = 'Offers';
   String name = "";
+  double _width;
+  double _height;
 
   @override
   Widget build(BuildContext context) {
+    _width = MediaQuery.of(context).size.width;
+    _height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: styledAppbar(context, title: this.title),
       body: StreamBuilder<QuerySnapshot>(
@@ -34,25 +40,36 @@ class _OffersScreenState extends State<OffersScreen> {
                   itemBuilder: (context, index) {
                     DocumentSnapshot data = snapshot.data.docs[index];
                     return Card(
-                      child: Row(
-                        children: <Widget>[
-                          Image.network(
-                            data['photoUrl'],
-                            width: 150,
-                            height: 100,
-                            fit: BoxFit.fill,
-                          ),
-                          SizedBox(
-                            width: 25,
-                          ),
-                          Text(
-                            data['title'],
-                            style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 15,
+                      child: InkWell(
+                        onTap: () => {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => OffersDetailsScreen(
+                                  data: data, width: _width),
                             ),
-                          ),
-                        ],
+                          )
+                        },
+                        child: Row(
+                          children: <Widget>[
+                            Image.network(
+                              data['photoUrl'],
+                              width: 150,
+                              height: 100,
+                              fit: BoxFit.fill,
+                            ),
+                            SizedBox(
+                              width: 25,
+                            ),
+                            Text(
+                              data['title'],
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 15,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     );
                   },
