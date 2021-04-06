@@ -1,30 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:journeyapp/screens/dashboard/components/appbar.dart';
 
-import '../../../../constants.dart';
-
-
-class OffersScreenPage extends StatelessWidget {
+class TopScreenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: OffersScreen(),
+      body: AgroToursScreen(),
     );
   }
 }
 
-class OffersScreen extends StatefulWidget {
+class AgroToursScreen extends StatefulWidget {
   @override
-  _OffersScreenState createState() => _OffersScreenState();
+  _AgroToursScreenState createState() => _AgroToursScreenState();
 }
 
-class _OffersScreenState extends State<OffersScreen> {
-  final title = 'Offers';
+class _AgroToursScreenState extends State<AgroToursScreen> {
+  final title = 'Agro Tours';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: styledAppbar(context, title: this.title),
+      body: Container(),
     );
   }
 }

@@ -3,28 +3,27 @@ import 'package:journeyapp/screens/dashboard/components/appbar.dart';
 
 import '../../../../constants.dart';
 
-class ProfileScreenPage extends StatelessWidget {
+class EventsScreenPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ProfileScreen(),
+      body: EventsScreen(),
     );
   }
 }
 
-class ProfileScreen extends StatefulWidget {
+class EventsScreen extends StatefulWidget {
   @override
-  _ProfileScreenState createState() => _ProfileScreenState();
+  _EventsScreenState createState() => _EventsScreenState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
-  final title = 'Profile';
+class _EventsScreenState extends State<EventsScreen> {
+  final title = 'Events';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: styledAppbar(context, title: this.title),
-      body: Container(),
     );
   }
 }

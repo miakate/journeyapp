@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:journeyapp/screens/Login/login_screen.dart';
-import 'package:journeyapp/screens/Signup/signup_screen.dart';
-import 'package:journeyapp/screens/Welcome/components/background.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:journeyapp/components/rounded_button.dart';
 import 'package:journeyapp/constants.dart';
+import 'package:journeyapp/screens/login/login_screen.dart';
+import 'package:journeyapp/screens/signup/signup_screen.dart';
+import 'package:journeyapp/screens/welcome/components/background.dart';
 
 
 class Body extends StatelessWidget {

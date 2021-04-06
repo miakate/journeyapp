@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.journeyapp">
+    package="com.journey.app">
    <application
         android:label="Journey"
         android:icon="@mipmap/ic_launcher">

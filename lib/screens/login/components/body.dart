@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:journeyapp/screens/Login/components/background.dart';
-import 'package:journeyapp/screens/Signup/signup_screen.dart';
 import 'package:journeyapp/components/already_have_an_account_acheck.dart';
 import 'package:journeyapp/components/rounded_button.dart';
 import 'package:journeyapp/components/rounded_input_field.dart';
 import 'package:journeyapp/components/rounded_password_field.dart';
+import 'package:journeyapp/screens/dashboard/components/tabs.dart';
+import 'package:journeyapp/screens/login/components/background.dart';
+import 'package:journeyapp/screens/signup/signup_screen.dart';
 
 import '../../../constants.dart';
+
 class Body extends StatelessWidget {
   const Body({
     Key key,
@@ -46,7 +47,14 @@ class Body extends StatelessWidget {
             SizedBox(height: size.height * 0.05),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => TabsPage(),
+                  ),
+                );
+              },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(

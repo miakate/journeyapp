@@ -1,15 +1,16 @@
 {
   "project_info": {
     "project_number": "122677724030",
+    "firebase_url": "https://journey-60b23-default-rtdb.firebaseio.com",
     "project_id": "journey-60b23",
     "storage_bucket": "journey-60b23.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:122677724030:android:f1c885eb1a60faaa13692f",
+        "mobilesdk_app_id": "1:122677724030:android:34e29a7e2b51796313692f",
         "android_client_info": {
-          "package_name": "com.journey"
+          "package_name": "com.journey.app"
         }
       },
       "oauth_client": [
